@@ -29,6 +29,11 @@ body {
     text-align: right;
 }
 
+#logo_image {
+	height: 80vh;
+	width: 85vh;
+}
+
 #main_window {
 	height: 100vh;
 }
@@ -41,9 +46,14 @@ body {
 	background-color: black;
 }
 
-@media screen and (max-width: 700px) {
-	#logo {
-		margin: auto 0;
+@media screen and (max-width: 500px) {
+	#logo_container {
+		height: 100%;
+		margin: auto;
+	}
+	#logo_image {
+		height: 40vh;
+		width: 45vh;
 	}
 	.footer {
 		display: none;
@@ -52,9 +62,6 @@ body {
 
 /*Universal Classes*/
 .margin {margin: 0 20px;}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+.inline {display:inline-block}
+.block {display:block}
+.center {margin: auto;width:50%;}
